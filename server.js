@@ -84,7 +84,7 @@ app.put("/update", async (req, res) => {
    }
 });
 
-const bcrypt = require("bcrypt"); // normalement déjà importé dans le modèle, mais à ajouter ici aussi si besoin
+const bcrypt = require('bcryptjs');  // normalement déjà importé dans le modèle, mais à ajouter ici aussi si besoin
 
 app.post("/login", async (req, res) => {
    const { username, password } = req.body;
